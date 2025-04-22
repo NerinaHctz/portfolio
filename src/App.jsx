@@ -9,11 +9,6 @@ import Container from './components/common/Container'
 function App() {
 
   return <Container>
-    <div className="p-8">
-      <h1 className="text-5xl font-molle text-pink-500">
-        ¡Hola con Molle desde Tailwind!
-      </h1>
-    </div>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/projects" element={<Projects />} />
