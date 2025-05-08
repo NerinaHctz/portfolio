@@ -1,5 +1,5 @@
 function Container({ children, className = '' }) {
-    return <div className={`max-w-6xl mx-auto px-4 ${className}`}>
+    return <div className={`max-w-screen ${className}`}>
         {children}
     </div>
 }

@@ -5,7 +5,7 @@ import Paragraph from './common/Paragraph'
 import Link from './common/Link'
 
 function Contact() {
-    return <Container className='p-8 text-center'>
+    return <Container className='text-center'>
         <Header />
         <Title level={2} className='text-3xl font-bold text-green-400'>Contact</Title>
         <Paragraph className='mt-4 text-lg'>Let's talk!</Paragraph>
