@@ -16,17 +16,14 @@ function Home() {
                 </Title>
             </Container>
         </Container>
-        <Container className='flex items-center justify-center p-4 m-auto mt-16 gap-24'>
-            {/* <NavLink to='/' className={({ isActive }) => isActive ? `${baseStyle} ${activeStyle}` : baseStyle}>
-                Home
-            </NavLink> */}
-            <NavLink to='/projects' className='text-center'>
+        <Container className='flex items-center justify-center p-4 m-auto mt-16 gap-24 flex-wrap'>
+            <NavLink to='/projects' className='text-center hover:scale-110 transition-transform duration-300'>
                 <img src='/img/projects.jpg' alt='Projects' className='w-48 h-48 border-2 border-[#008ad1] rounded-md shadow-b-lg shadow-md' /> Projects
             </NavLink>
-            <NavLink to='/about' className='text-center'>
+            <NavLink to='/about' className='text-center hover:scale-110 transition-transform duration-300'>
                 <img src='/img/about.webp' alt='About Me' className='w-48 h-48 border-2 border-[#e41e03] rounded-md shadow-b-lg shadow-md' /> About me
             </NavLink>
-            <NavLink to='/contact' className='text-center'>
+            <NavLink to='/contact' className='text-center hover:scale-110 transition-transform duration-300'>
                 <img src='/img/contact.jpg' alt='Contact' className='w-48 h-48 border-2 border-[#aeb6cb] rounded-md shadow-b-lg shadow-md' />  Contact
             </NavLink>
         </Container>

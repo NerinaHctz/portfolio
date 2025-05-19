@@ -31,18 +31,21 @@ function Projects() {
 
     return <Container >
         <Header />
-        <Title level={2} >Projects</Title>
-        <Paragraph >Here you will find all my most recent projects:</Paragraph>
-        <Container >
-            {projects.map((project, index) => (
-                <ProjectCard
-                    key={index}
-                    title={project.title}
-                    description={project.description}
-                    link={project.link}
-                    image={project.image}
-                />
-            ))}
+        <Container className='p-8 m-auto mt-8'>
+            <Title level={2} className='mb-3'>Projects</Title>
+            <Paragraph className='mb-3'>Here you will find all my most recent projects:</Paragraph>
+            <Container className='mt-8 mb-24 flex flex-col gap-8'>
+                {projects.map((project, index) => (
+                    <ProjectCard
+                        key={index}
+                        title={project.title}
+                        description={project.description}
+                        link={project.link}
+                        image={project.image}
+                        linkLive={project.linkLive}
+                    />
+                ))}
+            </Container>
         </Container>
     </Container>
 }

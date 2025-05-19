@@ -1,5 +1,5 @@
 function Link({ href, children, className = '', target = '_self', rel = '' }) {
-    const baseStyle = 'text-pink-500 hover:text-pink-400 font-semibold transition'
+    const baseStyle = 'text-pink-500 hover:text-pink-400 font-semibold transition w-fit'
 
     return (
         <a

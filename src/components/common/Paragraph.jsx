@@ -1,5 +1,5 @@
 function Paragraph({ children, className = '' }) {
-    const baseStyle = 'text-lg text-gray-400 leading-relaxed'
+    const baseStyle = 'text-lg text-gray-400'
 
     return <p className={`${baseStyle} ${className}`}>{children}</p>
 }
